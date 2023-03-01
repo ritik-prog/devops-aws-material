@@ -1,0 +1,14 @@
+lsblk
+
+sudo su
+
+file -s /dev/xvdb
+
+mkfs -t xfs /dev/xvdb
+
+file -s /dev/xvdb
+
+mkdir /mydata
+
+mount /dev/xvdb /mydata
+
